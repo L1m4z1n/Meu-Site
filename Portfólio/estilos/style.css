@@ -109,7 +109,7 @@ section {
 main {
     background-color:#A64F03 ;
     width: 600px;
-    height: 81vh;
+    height: 100vh;
     padding: 32px;
     margin: auto;
     border: 1px solid #bf8e7a76;
@@ -118,9 +118,20 @@ main {
     position: relative;
 }
 
+h2#forme {
+    text-align: right;
+    color: white;
+}
+
 div#imagem {
     background: url('../imagens/Meu\ pixel.png');
     position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid rgba(0, 0, 0, 0.33);
 }
 
 section#redes-sociais img{
