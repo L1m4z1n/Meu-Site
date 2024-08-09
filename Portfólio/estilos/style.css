@@ -32,6 +32,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0px;
+    height: 100vh;
     padding: 0px;
     line-height: 1.6em;
     background-image: url('../imagens/fundo-preto.jpg');
@@ -39,6 +40,11 @@ body {
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment:fixed;
+}
+
+h1 {
+    text-align: center;
+    color: white;
 }
 
 header {
@@ -75,11 +81,24 @@ menu > ul > li > a {
    background-color: #BF8D7A;
    color: white;
    border-radius: 25px;
+   margin-left: 2px;
    border-top:1px solid rgba(128, 128, 128, 0.475) ;
 }
 
 menu > ul > li > a:hover {
     background-color: #F27E63;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+    transition: transform 0.5s;
+}
+
+span:hover#movimento {
+    border-radius: 25px;
+    background-color: black;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.604);
+    transition: transform 0.5s;
+    cursor: pointer;
 }
 
 section {
@@ -99,6 +118,10 @@ main {
     position: relative;
 }
 
+div#imagem {
+    background: url('../imagens/Meu\ pixel.png');
+    position: absolute;
+}
 
 section#redes-sociais img{
     width: 50px;
